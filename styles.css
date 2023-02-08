@@ -1,0 +1,114 @@
+/* Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%) */
+
+html {
+    font-family: 'Outfit', sans-serif; ;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+}
+
+.card-container {
+    background-color: hsl(216, 50%, 16%);
+    width: 300px;
+    padding: 30px;
+    border-radius: 10px;
+}
+.img-container {
+    width: 100%;
+    position: relative;
+}
+
+.main-img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    border-radius: 7px;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    background-color: hsl(178, 100%, 50%);
+}
+#eye select {
+    opacity: 1 ;
+}
+
+.icons-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.info-row {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+
+}
+.eth {
+    color: hsl(178, 100%, 50%);
+}
+.profile-photo {
+    width: 45px;
+    height: 45px;
+    border: 1px solid white;
+    border-radius:50%;
+}
+
+.main-text {
+    padding: 0;
+}
+
+p {
+    font-weight: 400;
+    color: hsl(215, 51%, 70%);
+    padding-left: 12px;
+}
+
+hr {
+    border:1px solid  hsl(215, 32%, 27%);
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+   color:  hsl(178, 100%, 50%); 
+}
+
+.footer {
+    display: flex;
+}
+
+
+.overlay:hover {
+    opacity: .3;
+    border-radius: 7px;
+
+}
